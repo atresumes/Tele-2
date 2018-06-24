@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@drawable/white_border_only" app:layout_width="match_parent" app:layout_height="match_parent" app:keepScreenOn="true"
+    <RelativeLayout app:layout_width="match_parent" app:layout_height="match_parent">
+        <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_above="@+id/rv_bottom">
+            <RelativeLayout app:layout_width="match_parent" app:layout_height="match_parent" app:layout_weight="1.0">
+                <FrameLayout app:id="@+id/subscriber_container" app:layout_width="match_parent" app:layout_height="match_parent" />
+                <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/publisher_container" app:layout_width="UNKNOWN_DATA_0x7f0a004c" app:layout_height="UNKNOWN_DATA_0x7f0a004c" app:layout_marginBottom="@dimen/_20sdp" app:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <FrameLayout app:id="@+id/guest_container" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout app:id="@+id/rv_bottom" app:background="@color/white_video_call" app:paddingTop="@dimen/_5sdp" app:paddingBottom="@dimen/_5sdp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+            <ImageView app:id="@+id/img_rotate_camera" app:layout_width="UNKNOWN_DATA_0x7f0a013f" app:layout_height="UNKNOWN_DATA_0x7f0a013f" app:layout_marginRight="@dimen/_20sdp" app:src="@drawable/camera_icon" app:layout_toLeftOf="@+id/img_endCall" app:layout_centerHorizontal="true" />
+            <ImageView app:id="@+id/img_endCall" app:layout_width="UNKNOWN_DATA_0x7f0a013f" app:layout_height="UNKNOWN_DATA_0x7f0a013f" app:src="@drawable/end_call" app:layout_centerHorizontal="true" />
+            <ImageView app:id="@+id/img_mute_on" app:layout_width="UNKNOWN_DATA_0x7f0a013f" app:layout_height="UNKNOWN_DATA_0x7f0a013f" app:layout_marginLeft="@dimen/_20sdp" app:src="@drawable/mute_off" app:layout_toRightOf="@+id/img_endCall" app:layout_centerHorizontal="true" app:contentDescription="@string/normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView app:id="@+id/img_add_user" app:layout_width="UNKNOWN_DATA_0x7f0a013f" app:layout_height="UNKNOWN_DATA_0x7f0a013f" app:layout_marginTop="@dimen/_20sdp" app:layout_marginRight="@dimen/_10sdp" app:src="@drawable/add_guest" app:layout_alignParentRight="true" app:contentDescription="@string/normal" />
+</RelativeLayout>

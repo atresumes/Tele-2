@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/_16sdp" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:background="@drawable/agreement_drawable" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/_8sdp" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/linear_save">
+            <ScrollView android:paddingTop="@dimen/_25sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:id="@+id/data" android:paddingLeft="@dimen/_10sdp" android:paddingRight="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/agreement_text" />
+            </ScrollView>
+        </LinearLayout>
+        <ImageView android:id="@+id/img_cancel" android:layout_width="UNKNOWN_DATA_0x7f0a00d0" android:layout_height="UNKNOWN_DATA_0x7f0a00d0" android:src="@drawable/cross_button" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/linear_save" android:background="@drawable/agree_btn" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0a013f" android:layout_marginLeft="@dimen/_35sdp" android:layout_marginTop="@dimen/_9sdp" android:layout_marginRight="@dimen/_35sdp" android:layout_marginBottom="@dimen/_10sdp" android:weightSum="2.0" android:layout_above="@+id/bottom_tabs" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/agree" style="@style/CustomTextAppearance_Semibold" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

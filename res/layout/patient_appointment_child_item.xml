@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" card_view:orientation="vertical" card_view:layout_width="match_parent" card_view:layout_height="wrap_content"
+    <LinearLayout card_view:orientation="vertical" card_view:id="@+id/lin_parent" card_view:background="@drawable/left_right_border" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_15sdp" card_view:layout_marginRight="@dimen/_15sdp"
+        <LinearLayout card_view:orientation="horizontal" card_view:paddingTop="@dimen/_10sdp" card_view:paddingBottom="@dimen/_10sdp" card_view:layout_width="match_parent" card_view:layout_height="wrap_content">
+            <ImageView card_view:id="@+id/img_user" card_view:layout_width="UNKNOWN_DATA_0x7f0a01e6" card_view:layout_height="UNKNOWN_DATA_0x7f0a01e6" card_view:layout_marginLeft="@dimen/_5sdp" card_view:src="@drawable/profile_img1" />
+            <RelativeLayout card_view:layout_width="match_parent" card_view:layout_height="match_parent">
+                <LinearLayout card_view:orientation="vertical" card_view:layout_width="match_parent" card_view:layout_height="match_parent" card_view:layout_toLeftOf="@+id/tv_time">
+                    <TextView card_view:textSize="@dimen/_14sdp" card_view:textColor="@color/black" card_view:ellipsize="end" card_view:id="@+id/tv_name" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_10sdp" card_view:text="@string/mdtp_time" card_view:maxLines="1" card_view:layout_alignParentRight="true" card_view:layout_centerVertical="true" style="@style/CustomTextAppearance_Semibold" />
+                    <TextView card_view:textSize="@dimen/_10sdp" card_view:textColor="@color/app_text" card_view:ellipsize="end" card_view:id="@+id/tv_age" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_10sdp" card_view:text="@string/mdtp_time" card_view:maxLines="1" card_view:layout_alignParentRight="true" card_view:layout_centerVertical="true" style="@style/CustomTextAppearance_Light" />
+                    <TextView card_view:textSize="@dimen/_10sdp" card_view:textColor="@color/dash_baord_pat" card_view:ellipsize="end" card_view:id="@+id/tv_status" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_10sdp" card_view:text="@string/mdtp_time" card_view:maxLines="1" card_view:layout_alignParentRight="true" card_view:layout_centerVertical="true" style="@style/CustomTextAppearance_Light" />
+                </LinearLayout>
+                <TextView card_view:textSize="@dimen/_10sdp" card_view:textColor="@color/black" card_view:ellipsize="end" card_view:id="@+id/tv_time" card_view:layout_width="wrap_content" card_view:layout_height="wrap_content" card_view:layout_marginTop="@dimen/_2sdp" card_view:layout_marginRight="@dimen/_15sdp" card_view:text="@string/mdtp_time" card_view:layout_alignParentRight="true" style="@style/CustomTextAppearance_Light" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View card_view:id="@+id/line" card_view:background="@color/circle_shadow" card_view:layout_width="match_parent" card_view:layout_height="UNKNOWN_DATA_0x7f0a008e" card_view:layout_marginLeft="@dimen/_30sdp" card_view:layout_marginRight="@dimen/_30sdp" />
+    </LinearLayout>
+    <View card_view:id="@+id/empty_view_bottom" card_view:background="@color/transparent" card_view:layout_width="match_parent" card_view:layout_height="UNKNOWN_DATA_0x7f0a0099" card_view:layout_marginLeft="@dimen/_30sdp" card_view:layout_marginRight="@dimen/_30sdp" />
+</LinearLayout>

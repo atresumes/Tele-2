@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0a01e6">
+    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/tv_confirm" android:background="@drawable/normal_blue" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_5sdp" android:paddingRight="@dimen/_15sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/self_schedule_appointment" android:layout_centerInParent="true" />
+</RelativeLayout>

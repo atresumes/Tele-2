@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" card_view:orientation="vertical" card_view:background="@color/white" card_view:layout_width="match_parent" card_view:layout_height="match_parent">
+    <ScrollView card_view:layout_width="match_parent" card_view:layout_height="wrap_content">
+        <LinearLayout card_view:orientation="vertical" card_view:layout_width="match_parent" card_view:layout_height="wrap_content">
+            <RelativeLayout card_view:layout_width="match_parent" card_view:layout_height="UNKNOWN_DATA_0x7f0a0041" card_view:layout_margin="@dimen/_2sdp">
+                <ImageView card_view:id="@+id/img_vid_icon" card_view:layout_width="match_parent" card_view:layout_height="match_parent" card_view:src="@drawable/video_doc" card_view:scaleType="centerCrop" />
+                <ImageView card_view:id="@+id/img_play_video" card_view:layout_width="UNKNOWN_DATA_0x7f0a0177" card_view:layout_height="UNKNOWN_DATA_0x7f0a0177" card_view:src="@drawable/play_btn" card_view:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout card_view:orientation="vertical" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_15sdp" card_view:layout_marginTop="@dimen/_8sdp" card_view:layout_marginRight="@dimen/_15sdp"
+                <LinearLayout card_view:orientation="horizontal" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:weightSum="5.0">
+                    <android.support.v7.widget.CardView card_view:id="@+id/doc_faq" card_view:layout_width="UNKNOWN_DATA_0x1" card_view:layout_height="wrap_content" card_view:layout_weight="2.4" card_view:cardUseCompatPadding="true">
+                        <RelativeLayout card_view:background="@color/white" card_view:paddingTop="@dimen/_10sdp" card_view:paddingBottom="@dimen/_10sdp" card_view:layout_width="match_parent" card_view:layout_height="wrap_content">
+                            <ImageView card_view:id="@+id/img_faq" card_view:layout_width="wrap_content" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_10sdp" card_view:src="@drawable/faq_icon" card_view:layout_centerVertical="true" />
+                            <TextView card_view:textSize="@dimen/_11sdp" card_view:textColor="@color/app_text" card_view:gravity="top|bottom|center_vertical|fill_vertical|center|fill" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_5sdp" card_view:text="@string/doc_faq" card_view:layout_toLeftOf="@+id/img_faq_back" card_view:layout_toRightOf="@+id/img_faq" card_view:layout_centerVertical="true" style="@style/CustomTextAppearance_Semibold" />
+                            <ImageView card_view:id="@+id/img_faq_back" card_view:layout_width="wrap_content" card_view:layout_height="wrap_content" card_view:layout_marginRight="@dimen/_10sdp" card_view:src="@drawable/right_arrow" card_view:layout_alignParentRight="true" card_view:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <View card_view:layout_width="UNKNOWN_DATA_0x1" card_view:layout_height="wrap_content" card_view:layout_weight="0.2" />
+                    <android.support.v7.widget.CardView card_view:id="@+id/pat_faq" card_view:layout_width="UNKNOWN_DATA_0x1" card_view:layout_height="wrap_content" card_view:layout_weight="2.4" card_view:cardUseCompatPadding="true">
+                        <RelativeLayout card_view:background="@color/white" card_view:paddingTop="@dimen/_10sdp" card_view:paddingBottom="@dimen/_10sdp" card_view:layout_width="match_parent" card_view:layout_height="wrap_content">
+                            <ImageView card_view:id="@+id/img_faq2" card_view:layout_width="wrap_content" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_10sdp" card_view:src="@drawable/faq_icon" card_view:layout_centerVertical="true" />
+                            <TextView card_view:textSize="@dimen/_11sdp" card_view:textColor="@color/app_text" card_view:gravity="top|bottom|center_vertical|fill_vertical|center|fill" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_5sdp" card_view:text="@string/pat_faq" card_view:layout_toLeftOf="@+id/img_faq_back2" card_view:layout_toRightOf="@+id/img_faq2" card_view:layout_centerVertical="true" style="@style/CustomTextAppearance_Semibold" />
+                            <ImageView card_view:id="@+id/img_faq_back2" card_view:layout_width="wrap_content" card_view:layout_height="wrap_content" card_view:layout_marginRight="@dimen/_10sdp" card_view:src="@drawable/right_arrow" card_view:layout_alignParentRight="true" card_view:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <android.support.v7.widget.CardView card_view:id="@+id/who_we" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginTop="@dimen/_10sdp" card_view:cardUseCompatPadding="true">
+                    <RelativeLayout card_view:background="@color/white" card_view:paddingTop="@dimen/_10sdp" card_view:paddingBottom="@dimen/_10sdp" card_view:layout_width="match_parent" card_view:layout_height="wrap_content">
+                        <ImageView card_view:id="@+id/img_who_we" card_view:layout_width="wrap_content" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_10sdp" card_view:src="@drawable/who_icon" card_view:layout_centerVertical="true" />
+                        <TextView card_view:textSize="@dimen/_11sdp" card_view:textColor="@color/app_text" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_10sdp" card_view:text="@string/who_are_we" card_view:layout_toLeftOf="@+id/img_who_back" card_view:layout_toRightOf="@+id/img_who_we" card_view:layout_centerVertical="true" style="@style/CustomTextAppearance_Semibold" />
+                        <ImageView card_view:id="@+id/img_who_back" card_view:layout_width="wrap_content" card_view:layout_height="wrap_content" card_view:layout_marginRight="@dimen/_10sdp" card_view:src="@drawable/right_arrow" card_view:layout_alignParentRight="true" card_view:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView card_view:id="@+id/telemedicine" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginTop="@dimen/_10sdp" card_view:cardUseCompatPadding="true">
+                    <RelativeLayout card_view:background="@color/white" card_view:paddingTop="@dimen/_10sdp" card_view:paddingBottom="@dimen/_10sdp" card_view:layout_width="match_parent" card_view:layout_height="wrap_content">
+                        <ImageView card_view:textColor="@color/app_text" card_view:id="@+id/img_tele" card_view:layout_width="wrap_content" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_10sdp" card_view:src="@drawable/telemedicines_icon" card_view:layout_centerVertical="true" />
+                        <TextView card_view:textSize="@dimen/_11sdp" card_view:textColor="@color/app_text" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_10sdp" card_view:text="@string/what_is_telemedicine" card_view:layout_toLeftOf="@+id/img_tele_back" card_view:layout_toRightOf="@+id/img_tele" card_view:layout_centerVertical="true" style="@style/CustomTextAppearance_Semibold" />
+                        <ImageView card_view:id="@+id/img_tele_back" card_view:layout_width="wrap_content" card_view:layout_height="wrap_content" card_view:layout_marginRight="@dimen/_10sdp" card_view:src="@drawable/right_arrow" card_view:layout_alignParentRight="true" card_view:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <TextView card_view:textSize="@dimen/_12sdp" card_view:textColor="@color/dash_baord_pat" card_view:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="@dimen/_5sdp" card_view:layout_marginTop="@dimen/_10sdp" card_view:layout_marginRight="@dimen/_5sdp" card_view:layout_marginBottom="@dimen/_15sdp" card_view:text="@string/how_would_you_like_to_continue" style="@style/CustomTextAppearance_Semibold" />
+                <LinearLayout card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:weightSum="3.0"
+                    <LinearLayout card_view:orientation="vertical" card_view:id="@+id/doc_linear" card_view:layout_width="UNKNOWN_DATA_0x1" card_view:layout_height="wrap_content" card_view:layout_weight="1.0">
+                        <ImageView card_view:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" card_view:id="@+id/img_doc" card_view:layout_width="UNKNOWN_DATA_0x7f0a0262" card_view:layout_height="UNKNOWN_DATA_0x7f0a0262" card_view:src="@drawable/clinic" />
+                        <TextView card_view:textSize="@dimen/_14sdp" card_view:textColor="@color/dash_baord_doc_text_color" card_view:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_margin="@dimen/_5sdp" card_view:text="@string/clinic" />
+                    </LinearLayout>
+                    <View card_view:background="@color/light_grey" card_view:layout_width="UNKNOWN_DATA_0x7f0a008e" card_view:layout_height="UNKNOWN_DATA_0x7f0a026d" />
+                    <LinearLayout card_view:orientation="vertical" card_view:id="@+id/pat_linear" card_view:layout_width="UNKNOWN_DATA_0x1" card_view:layout_height="wrap_content" card_view:layout_weight="1.0">
+                        <ImageView card_view:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" card_view:id="@+id/img_patient" card_view:layout_width="UNKNOWN_DATA_0x7f0a0262" card_view:layout_height="UNKNOWN_DATA_0x7f0a0262" card_view:src="@drawable/patient_icon" />
+                        <TextView card_view:textSize="@dimen/_14sdp" card_view:textColor="@color/dash_baord_doc_pat_color" card_view:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_margin="@dimen/_5sdp" card_view:text="@string/patient" />
+                    </LinearLayout>
+                    <View card_view:background="@color/light_grey" card_view:visibility="visible" card_view:layout_width="UNKNOWN_DATA_0x7f0a008e" card_view:layout_height="UNKNOWN_DATA_0x7f0a026d" />
+                    <LinearLayout card_view:orientation="vertical" card_view:id="@+id/guest_linear" card_view:visibility="visible" card_view:layout_width="UNKNOWN_DATA_0x1" card_view:layout_height="wrap_content" card_view:layout_weight="1.0">
+                        <ImageView card_view:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" card_view:id="@+id/img_guest" card_view:layout_width="UNKNOWN_DATA_0x7f0a0262" card_view:layout_height="UNKNOWN_DATA_0x7f0a0262" card_view:src="@drawable/guest" />
+                        <TextView card_view:textSize="@dimen/_14sdp" card_view:textColor="@color/dash_baord_doc_pat_color" card_view:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_margin="@dimen/_5sdp" card_view:text="@string/guest" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

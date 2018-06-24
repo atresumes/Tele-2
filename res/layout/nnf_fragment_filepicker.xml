@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar app:theme="?attr/nnf_toolbarTheme" app:id="@id/nnf_picker_toolbar" app:background="?attr/colorPrimary" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="?attr/actionBarSize" app:layout_alignParentTop="true">
+        <TextView app:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" app:ellipsize="start" app:id="@id/nnf_current_dir" app:layout_width="match_parent" app:layout_height="wrap_content" app:singleLine="true" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView app:id="0x102000a" app:focusable="true" app:descendantFocusability="afterDescendants" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_above="@id/nnf_buttons_container" app:layout_below="@id/nnf_picker_toolbar" />
+    <FrameLayout app:id="@id/nnf_buttons_container" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+        <LinearLayout app:orientation="horizontal" app:id="@id/nnf_button_container" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <Button app:id="@id/nnf_button_cancel" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x3001" app:text="0x1040000" app:layout_weight="1.0" style="?attr/borderlessButtonStyle" />
+            <Button app:id="@id/nnf_button_ok" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x3001" app:text="0x104000a" app:layout_weight="1.0" style="?attr/borderlessButtonStyle" />
+        </LinearLayout>
+        <LinearLayout app:orientation="horizontal" app:id="@id/nnf_newfile_button_container" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <EditText app:id="@id/nnf_text_filename" app:paddingLeft="8dp" app:paddingRight="8dp" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x3001" app:hint="@string/nnf_filename" app:maxLines="1" app:layout_weight="1.0" />
+            <ImageButton app:id="@id/nnf_button_ok_newfile" app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:tint="?attr/nnf_save_icon_color" app:hint="0x104000a" app:srcCompat="@drawable/nnf_ic_save_black_24dp" style="?attr/borderlessButtonStyle" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout app:id="@id/divider" app:background="?attr/nnf_separator_color" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_above="@id/nnf_buttons_container" />
+</RelativeLayout>

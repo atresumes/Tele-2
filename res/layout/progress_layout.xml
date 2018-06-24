@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/round_white_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_16sdp" android:minWidth="@dimen/_90sdp">
+        <ProgressBar android:id="@+id/circular_progress" android:layout_width="UNKNOWN_DATA_0x7f0a01ae" android:layout_height="UNKNOWN_DATA_0x7f0a01ae" android:layout_margin="@dimen/_8sdp" android:indeterminate="true" />
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/dash_baord_doc" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/progress_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp" android:text="@string/please_wait" style="@style/CustomTextAppearance_Regular" />
+    </LinearLayout>
+</LinearLayout>

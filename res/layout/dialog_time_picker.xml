@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/_20sdp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/rectangle_with_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <NumberPicker android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/npPicker" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/round_white_background" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f010078">
+            <Button android:textSize="@dimen/_14sdp" android:textColor="@color/app_text" android:id="@+id/action_negative" android:background="@drawable/bottom_left_round_background" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1.0" style="@style/CustomTextAppearance_Light" />
+            <Button android:textSize="@dimen/_14sdp" android:textColor="@color/app_text" android:id="@+id/action_positive" android:background="@drawable/bottom_right_round_background" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_marginLeft="0.25dp" android:text="@string/ok" android:layout_weight="1.0" style="@style/CustomTextAppearance_Light" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

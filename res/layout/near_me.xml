@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" card_view:orientation="vertical" card_view:background="@color/white" card_view:layout_width="match_parent" card_view:layout_height="match_parent">
+    <android.support.v7.widget.CardView card_view:id="@+id/card_view" card_view:layout_width="match_parent" card_view:layout_height="match_parent" card_view:layout_margin="@dimen/_10sdp" card_view:layout_above="@+id/header" card_view:cardUseCompatPadding="true">
+        <fragment card_view:id="@+id/map" card_view:layout_width="match_parent" card_view:layout_height="match_parent" class="com.google.android.gms.maps.SupportMapFragment" />
+    </android.support.v7.widget.CardView>
+    <ImageView card_view:id="@+id/header" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:src="@drawable/doctor_head" card_view:layout_centerInParent="true" />
+    <LinearLayout card_view:orientation="vertical" card_view:layout_width="match_parent" card_view:layout_height="match_parent" card_view:layout_below="@+id/header">
+        <android.support.v7.widget.RecyclerView card_view:id="@+id/recyclerView" card_view:background="#ffffff" card_view:visibility="visible" card_view:scrollbars="vertical" card_view:layout_width="match_parent" card_view:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView card_view:textSize="@dimen/_14sdp" card_view:textColor="@color/app_text" card_view:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" card_view:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" card_view:id="@+id/tv_no_data" card_view:padding="@dimen/_20sdp" card_view:visibility="gone" card_view:layout_width="match_parent" card_view:layout_height="match_parent" card_view:text="@string/sorry_no_data_found_2" />
+</RelativeLayout>

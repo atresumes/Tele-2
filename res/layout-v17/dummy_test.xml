@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:background="@drawable/header" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0a0036" />
+    <ImageView android:id="@+id/img_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_40sdp" android:src="@drawable/profile_circle" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/linear_doc_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/img_header">
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/black" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/name" android:drawablePadding="@dimen/_5sdp" android:layout_centerHorizontal="true" style="@style/CustomTextAppearance_Bold" />
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/app_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/name" android:drawableLeft="@drawable/stethoscope_icon" android:drawablePadding="@dimen/_5sdp" android:layout_centerHorizontal="true" style="@style/CustomTextAppearance_Light" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/linear_doc_name">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0a013f" android:layout_marginLeft="@dimen/_30sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_30sdp">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/l_1" android:background="@drawable/grey_bg" android:layout_width="UNKNOWN_DATA_0x7f0a01e6" android:layout_height="match_parent" />
+                <LinearLayout android:background="@drawable/my_appointments_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/l_1" />
+            </RelativeLayout> />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginTop="@dimen/_63sdp" android:src="@drawable/iconn" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/linear_contact_us" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginRight="19dp" android:layout_alignTop="@+id/img_header" android:layout_alignParentRight="true" android:layout_marginEnd="19dp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_iconss" />
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/white" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="@string/contact_us" android:maxLines="1" style="@style/CustomTextAppearance_Light" />
+    </LinearLayout>
+</RelativeLayout>

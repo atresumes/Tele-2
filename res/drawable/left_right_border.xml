@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/light_grey" />
+        </shape>
+    </item>
+    <item android:left="@dimen/_1sdp" android:right="@dimen/_2sdp"
+        // add android:right=&quot;5dp&quot; and android:left=&quot;5dp&quot; for border on left and right>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/parent" android:padding="@dimen/_39sdp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/rectangle_with_border" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/light_grey" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/dialog_message" android:paddingLeft="@dimen/_16sdp" android:paddingRight="@dimen/_16sdp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0a0177" android:text="@string/name" style="@style/CustomTextAppearance_Regular" />
+        <View android:background="@color/light_grey" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0a008e" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" />
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/light_grey" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/data" android:background="@drawable/bottom_round_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:maxHeight="@dimen/_120sdp" android:text="@string/dummy_data" style="@style/CustomTextAppearance_Regular" />
+    </LinearLayout>
+</RelativeLayout>

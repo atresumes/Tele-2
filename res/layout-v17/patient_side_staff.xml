@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/headrer" android:background="@drawable/header" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0a024c">
+        <include android:id="@+id/app_header" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/app_header" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+        <LinearLayout android:background="@color/dash_baord_pat" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rel_doc" android:background="@drawable/only_black_border" android:paddingTop="@dimen/_5sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_10sdp">
+                <ImageView android:id="@+id/img_sat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:src="@drawable/stethoscope_icon" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@+id/tv_doctor" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:hint="@string/select_doctor" android:layout_toLeftOf="@+id/img_doc_down" android:layout_toRightOf="@+id/img_sat" android:layout_centerVertical="true" style="@style/CustomTextAppearance_Light" />
+                <ImageView android:id="@+id/img_doc_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:src="@drawable/down_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/loading_layout" android:layout_above="@+id/bottom_tabs" android:layout_below="@+id/headrer" android:layout_toEndOf="@+id/loading_layout">
+            <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:background="#ffffff" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/headrer" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

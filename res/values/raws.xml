@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <raw name="ringtone">res/raw/ringtone.mp3</raw>
+    <raw name="video">res/raw/video.mp4</raw>
+</resources>

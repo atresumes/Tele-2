@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" card_view:orientation="vertical" card_view:background="@color/white" card_view:layout_width="match_parent" card_view:layout_height="match_parent"
+    <RelativeLayout card_view:id="@+id/header" card_view:background="@drawable/header" card_view:layout_width="match_parent" card_view:layout_height="UNKNOWN_DATA_0x7f0a024c">
+        <include card_view:layout_width="match_parent" card_view:layout_height="wrap_content" layout="@layout/app_header" />
+    </RelativeLayout>
+    <RelativeLayout card_view:orientation="vertical" card_view:layout_width="match_parent" card_view:layout_height="match_parent" card_view:layout_below="@+id/header">
+        <WebView card_view:id="@+id/webView" card_view:visibility="visible" card_view:layout_width="match_parent" card_view:layout_height="match_parent" />
+        <LinearLayout card_view:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" card_view:orientation="horizontal" card_view:id="@+id/linear_done" card_view:background="@drawable/normal_blue" card_view:clickable="true" card_view:layout_width="match_parent" card_view:layout_height="UNKNOWN_DATA_0x7f0a013f" card_view:layout_marginLeft="@dimen/_40sdp" card_view:layout_marginRight="@dimen/_40sdp" card_view:layout_marginBottom="@dimen/_10sdp" card_view:layout_alignParentBottom="true">
+            <TextView card_view:enabled="false" card_view:textSize="@dimen/_16sdp" card_view:textColor="@color/white" card_view:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" card_view:id="@+id/done_button" card_view:tag="@string/selected" card_view:clickable="false" card_view:layout_width="match_parent" card_view:layout_height="match_parent" card_view:text="@string/exit_pharmacy" style="@style/CustomTextAppearance_Light" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

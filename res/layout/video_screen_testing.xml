@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@drawable/white_border_only" app:layout_width="match_parent" app:layout_height="match_parent" app:keepScreenOn="true">
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="match_parent" app:weightSum="2.0" app:layout_above="@+id/chat_container">
+        <RelativeLayout app:id="@+id/main_container" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_weight="1.0">
+            <FrameLayout app:id="@+id/subscriber_container" app:layout_width="match_parent" app:layout_height="match_parent" />
+            <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/publisher_container" app:layout_width="UNKNOWN_DATA_0x7f0a004c" app:layout_height="UNKNOWN_DATA_0x7f0a004c" app:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <FrameLayout app:id="@+id/guest_container" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout app:orientation="vertical" app:id="@+id/chat_container" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+        <RelativeLayout app:id="@+id/rv_bottom" app:background="@color/white_video_call" app:paddingTop="@dimen/_5sdp" app:paddingBottom="@dimen/_5sdp" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <ImageView app:id="@+id/img_rotate_camera" app:layout_width="UNKNOWN_DATA_0x7f0a013f" app:layout_height="UNKNOWN_DATA_0x7f0a013f" app:layout_marginRight="@dimen/_20sdp" app:src="@drawable/camera_icon" app:layout_toLeftOf="@+id/img_endCall" app:layout_centerHorizontal="true" />
+            <ImageView app:id="@+id/img_endCall" app:layout_width="UNKNOWN_DATA_0x7f0a013f" app:layout_height="UNKNOWN_DATA_0x7f0a013f" app:src="@drawable/end_call" app:layout_centerHorizontal="true" />
+            <ImageView app:id="@+id/img_mute_on" app:layout_width="UNKNOWN_DATA_0x7f0a013f" app:layout_height="UNKNOWN_DATA_0x7f0a013f" app:layout_marginLeft="@dimen/_20sdp" app:src="@drawable/mute_off" app:layout_toRightOf="@+id/img_endCall" app:layout_centerHorizontal="true" app:contentDescription="@string/normal" />
+            <ImageView app:id="@+id/img_msg" app:layout_width="UNKNOWN_DATA_0x7f0a0099" app:layout_height="UNKNOWN_DATA_0x7f0a0099" app:layout_marginRight="@dimen/_20sdp" app:src="@drawable/chat_off" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:contentDescription="@string/selected" />
+        </RelativeLayout>
+        <LinearLayout app:orientation="vertical" app:id="@+id/listViewParent" app:background="@drawable/chat_rect_bg" app:visibility="visible" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0020" app:layout_margin="@dimen/_2sdp">
+            <android.support.v7.widget.RecyclerView app:id="@+id/recyclerView" app:background="#ffffff" app:scrollbars="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_above="@+id/et_chat" app:layout_below="@+id/headrer" />
+        </LinearLayout>
+        <RelativeLayout app:id="@+id/msg_send_layout" app:paddingTop="@dimen/_5sdp" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <EditText app:textSize="@dimen/_10sdp" app:textColor="@color/black" app:textColorHint="@color/app_text" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/et_chat" app:background="@drawable/only_black_border" app:paddingLeft="@dimen/_5sdp" app:paddingTop="@dimen/_10sdp" app:paddingRight="@dimen/_5sdp" app:paddingBottom="@dimen/_10sdp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/_5sdp" app:layout_marginRight="@dimen/_5sdp" app:layout_marginBottom="@dimen/_5sdp" app:hint="@string/write_message_here" app:maxLines="4" app:layout_toLeftOf="@+id/img_attatch" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" app:textCursorDrawable="@drawable/cursor_drawable" style="@style/CustomTextAppearance_Light" />
+            <ImageView app:id="@+id/img_attatch" app:layout_width="UNKNOWN_DATA_0x7f0a00d0" app:layout_height="UNKNOWN_DATA_0x7f0a0108" app:layout_marginRight="@dimen/_10sdp" app:layout_marginBottom="@dimen/_5sdp" app:src="@drawable/attatch" app:layout_toLeftOf="@+id/img_send" />
+            <ImageView app:id="@+id/img_send" app:layout_width="UNKNOWN_DATA_0x7f0a0108" app:layout_height="UNKNOWN_DATA_0x7f0a0108" app:layout_marginRight="@dimen/_10sdp" app:layout_marginBottom="@dimen/_5sdp" app:src="@drawable/send" app:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView app:id="@+id/img_add_user" app:layout_width="UNKNOWN_DATA_0x7f0a013f" app:layout_height="UNKNOWN_DATA_0x7f0a013f" app:layout_marginTop="@dimen/_20sdp" app:layout_marginRight="@dimen/_10sdp" app:src="@drawable/add_guest" app:layout_alignParentRight="true" app:contentDescription="@string/normal" />
+</RelativeLayout>

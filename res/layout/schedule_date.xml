@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" card_view:orientation="vertical" card_view:background="@color/white" card_view:layout_width="match_parent" card_view:layout_height="match_parent"
+    <RelativeLayout card_view:id="@+id/headrer" card_view:background="@drawable/header" card_view:layout_width="match_parent" card_view:layout_height="UNKNOWN_DATA_0x7f0a0257">
+        <include card_view:layout_width="match_parent" card_view:layout_height="wrap_content" layout="@layout/app_header" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView card_view:id="@+id/recyclerView" card_view:background="#ffffff" card_view:scrollbars="vertical" card_view:layout_width="match_parent" card_view:layout_height="match_parent" card_view:layout_below="@+id/headrer" />
+    <include card_view:id="@+id/loading_layout" card_view:visibility="gone" card_view:layout_width="match_parent" card_view:layout_height="match_parent" layout="@layout/appointment_error_msg" />
+</RelativeLayout>

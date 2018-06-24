@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <xml name="filepaths">res/xml/filepaths.xml</xml>
+    <xml name="nnf_provider_paths">res/xml/nnf_provider_paths.xml</xml>
+</resources>

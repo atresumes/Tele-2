@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/_16sdp" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/only_blue_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_8sdp"
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0a0177">
+                <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/img_alert" android:layout_width="UNKNOWN_DATA_0x7f0a00d0" android:layout_height="UNKNOWN_DATA_0x7f0a00d0" android:layout_marginLeft="@dimen/_10sdp" android:src="@drawable/alert_icon" />
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/dash_baord_pat" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/title" android:paddingLeft="@dimen/_10sdp" android:paddingTop="@dimen/_5sdp" android:paddingRight="@dimen/_10sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/alert" style="@style/CustomTextAppearance_Semibold" />
+            </LinearLayout>
+            <View android:background="@color/dash_baord_pat" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x39999a31" />
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/app_text" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/dialog_message" android:paddingLeft="@dimen/_16sdp" android:paddingTop="@dimen/_15sdp" android:paddingRight="@dimen/_16sdp" android:paddingBottom="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/your_schedule_has_been_saved_successfully" style="@style/CustomTextAppearance_Light" />
+            <View android:background="@color/dash_baord_pat" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x39999a31" />
+            <LinearLayout android:background="@drawable/dialog_ok" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0"
+                <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/lin_action_ok" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x7f0a0108" android:layout_weight="1.0">
+                    <ImageView android:layout_width="UNKNOWN_DATA_0x7f0a0099" android:layout_height="UNKNOWN_DATA_0x7f0a0099" android:src="@drawable/phone_icon" />
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/action_ok" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_5sdp" android:text="@string/yes_dialog" />
+                </LinearLayout>
+                <View android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="@color/white" android:layout_width="UNKNOWN_DATA_0x7f0a008e" android:layout_height="UNKNOWN_DATA_0x7f0a0082" />
+                <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/lin_action_no" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x7f0a0108" android:layout_weight="1.0">
+                    <ImageView android:layout_width="UNKNOWN_DATA_0x7f0a0099" android:layout_height="UNKNOWN_DATA_0x7f0a0099" android:src="@drawable/email_icon" />
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/action_no" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_5sdp" android:text="@string/yes_dialog" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/img_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cross_button" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

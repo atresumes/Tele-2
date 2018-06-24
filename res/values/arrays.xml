@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="navDrawerIcons">
+        <item>@drawable/appointments_icon</item>
+        <item>@drawable/schedule_icon</item>
+        <item>@drawable/my_patients_icon</item>
+        <item>@drawable/presciption_icon</item>
+        <item>@drawable/my_profile_icon</item>
+        <item>@drawable/staff_icon</item>
+        <item>@drawable/notification_icon</item>
+        <item>@drawable/contact_us_icon</item>
+        <item>@drawable/logout_icon</item>
+    </array>
+    <array name="navDrawerIconsPatient">
+        <item>@drawable/information_icon</item>
+        <item>@drawable/my_appointment_s_icon</item>
+        <item>@drawable/my_doctors_icon</item>
+        <item>@drawable/notification_icon</item>
+        <item>@drawable/contact_us_icon</item>
+        <item>@drawable/logout_icon</item>
+    </array>
+    <array name="navDrawerItems">
+        <item>My Appointments</item>
+        <item>My Schedules</item>
+        <item>My Patients</item>
+        <item>Prescription</item>
+        <item>My Profile</item>
+        <item>My Staff</item>
+        <item>Notifications</item>
+        <item>Contact Us</item>
+        <item>Logout</item>
+    </array>
+    <array name="navDrawerPatientItems">
+        <item>My Information</item>
+        <item>My Appointments</item>
+        <item>My Doctors</item>
+        <item>Notifications</item>
+        <item>Contact Us</item>
+        <item>Logout</item>
+    </array>
+    <array name="navDrawerStaffIcons">
+        <item>@drawable/appointments_icon</item>
+        <item>@drawable/schedule_icon</item>
+        <item>@drawable/my_patients_icon</item>
+        <item>@drawable/my_profile_icon</item>
+        <item>@drawable/contact_us_icon</item>
+        <item>@drawable/logout_icon</item>
+    </array>
+    <array name="navDrawerStaffItems">
+        <item>My Appointments</item>
+        <item>My Schedules</item>
+        <item>My Patients</item>
+        <item>My Profile</item>
+        <item>Contact Us</item>
+        <item>Logout</item>
+    </array>
+    <array name="tabsArray">
+        <item>@string/doctor_code</item>
+        <item>@string/name_zip_code</item>
+        <item>@string/near_me</item>
+    </array>
+</resources>

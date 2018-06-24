@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <RelativeLayout app:id="@+id/headrer" app:background="@drawable/header" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a024c">
+        <include app:layout_width="match_parent" app:layout_height="wrap_content" layout="@layout/app_header" />
+    </RelativeLayout>
+    <com.astuetz.PagerSlidingTabStrip app:id="@+id/tabs" app:background="@color/dash_baord_pat" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a013f" app:pstsDividerColor="@color/transparent" app:pstsIndicatorHeight="@dimen/_3sdp" app:pstsShouldExpand="true" app:pstsTextAllCaps="false" />
+    <android.support.v4.view.ViewPager app:id="@+id/viewpager" app:background="0x106000b" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/tabs" />
+</LinearLayout>

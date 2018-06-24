@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="horizontal" app:id="@id/nnf_item_container" app:background="?attr/selectableItemBackground" app:focusable="true" app:nextFocusLeft="@id/nnf_button_cancel" app:nextFocusRight="@id/checkbox" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101004d" app:minHeight="?unknown_attr_ref: 101004d">
+    <ImageView app:id="@id/item_icon" app:visibility="visible" app:layout_width="UNKNOWN_DATA_0x101004d" app:layout_height="UNKNOWN_DATA_0x101004d" app:scaleType="center" app:adjustViewBounds="true" app:tint="?attr/nnf_dir_icon_color" app:srcCompat="@drawable/nnf_ic_folder_black_48dp" />
+    <TextView app:ellipsize="end" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="0x1020014" app:padding="8dp" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:text="@string/nnf_name" app:maxLines="1" app:singleLine="true" app:layout_weight="1.0" style="?unknown_attr_ref: 1010040" />
+    <CheckBox app:id="@id/checkbox" app:paddingRight="8dp" app:nextFocusLeft="@id/nnf_item_container" app:nextFocusRight="@id/nnf_button_ok" app:layout_width="wrap_content" app:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <View app:id="@+id/empty_view" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a024a" />
+    <RelativeLayout app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/_80sdp" app:layout_marginRight="@dimen/_5sdp">
+        <LinearLayout app:orientation="vertical" app:id="@+id/lin_msg_view" app:background="@drawable/chat_bg_publisher" app:paddingLeft="@dimen/_10sdp" app:paddingTop="@dimen/_5sdp" app:paddingRight="@dimen/_10sdp" app:paddingBottom="@dimen/_5sdp" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content">
+            <TextView app:textSize="@dimen/_10sdp" app:textColor="@color/black" app:id="@+id/tv_name" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/name" style="@style/CustomTextAppearance_Semibold" />
+            <TextView app:textSize="@dimen/_14sdp" app:textColor="@color/white" app:id="@+id/tv_message" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="" style="@style/CustomTextAppearance_Regular" />
+        </LinearLayout>
+        <RelativeLayout app:orientation="vertical" app:id="@+id/lin_img_view" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x7f0a0020">
+            <com.makeramen.roundedimageview.RoundedImageView app:id="@+id/img_link" app:layout_width="match_parent" app:layout_height="wrap_content" app:scaleType="centerCrop" app:riv_corner_radius="5dp" />
+            <TextView app:textSize="@dimen/_10sdp" app:textColor="@color/black" app:id="@+id/tv_name_2" app:paddingLeft="@dimen/_10sdp" app:paddingTop="@dimen/_5sdp" app:paddingRight="@dimen/_10sdp" app:paddingBottom="@dimen/_5sdp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/name" style="@style/CustomTextAppearance_Semibold" />
+            <ProgressBar app:id="@+id/progress_bar" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x7f0a0099" app:layout_height="UNKNOWN_DATA_0x7f0a0099" app:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View app:id="@+id/empty_view2" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a01db" />
+</LinearLayout>

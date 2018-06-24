@@ -1,0 +1,60 @@
+package com.trigma.tiktok.utils;
+
+public enum Units {
+    ANGSTORM(1.0E-10d),
+    ASTRONOMICAL_UNIT(1.49597871464E11d),
+    BARLEYCORN(0.00846d),
+    BOHR(5.3E-11d),
+    CABLE_LENGTH(185.2d),
+    CENTIMETRE(0.01d),
+    CHAIN(20.11684d),
+    CUBIT(0.5d),
+    ELL(1.143d),
+    FATHOM(1.8288d),
+    FERMI(1.0E-15d),
+    FINGER(0.022225d),
+    FOOT(0.304799735d),
+    FRENCH(3.0E-4d),
+    FURLONG(201.168d),
+    HAND(0.1016d),
+    INCH(0.0254d),
+    KILOMETRE(1000.0d),
+    LEAGUE(4828.032d),
+    LIGHT_YEAR(9.4607304725808E15d),
+    LIGHT_DAY(2.59020683712E13d),
+    LIGHT_HOUR(1.0792528488E12d),
+    LIGHT_MINUTE(1.798754748E10d),
+    LIGHT_SECOND(2.99792458E8d),
+    LINE(0.002116d),
+    LINK_GUNTERS_SURVEYORS(0.201168d),
+    LINK_RAMSDENS_ENGINEERS(0.3048d),
+    METRE(1.0d),
+    MICKEY(1.27E-4d),
+    MICRON(1.0E-6d),
+    MIL(2.54E-5d),
+    MILE(1609.344d),
+    MILLIMETRE(0.001d),
+    NAIL(0.05715d),
+    NANOMETER(1.0E-9d),
+    NAUTICAL_LEAGUE(5556.0d),
+    NAUTICAL_MILE(1853.0d),
+    PACE(0.762d),
+    PALM(0.0762d),
+    PARSEC(3.0857E16d),
+    POINT(3.5145E-4d),
+    QUARTER(0.2286d),
+    ROD(5.0292d),
+    ROPE(6.096d),
+    SPAN(0.2286d),
+    SPAT(1.0E12d),
+    STICK(0.0508d),
+    PICOMETRE(1.0E-12d),
+    X_UNIT(1.002E-13d),
+    YARD(0.9144d);
+    
+    public double length;
+
+    private Units(double value) {
+        this.length = value;
+    }
+}
